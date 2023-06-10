@@ -36,6 +36,29 @@
 </head>
 
 <body>
+    <div class="container1">
+      <section1>
+        <img src="Computer.png"id="computer">
+        <h2 id="text1">Devesh Agarwal - Portfolio...</h2>
+        <img src="Tech.png"id="tech">
+      </section1>
+
+    </div>
+    <script>
+      let text1 = document.getElementById('text1');
+      let computer = document.getElementById('computer');
+      let tech = document.getElementById('tech');
+
+      window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        computer.style.bottom = value * 0.5 + '%';
+        tech.style.bottom = value * -0.5 + 'px';
+        text1.style.right = -100+ value * 0.5 + '%';
+
+
+      })
+
+    </script>
 
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
